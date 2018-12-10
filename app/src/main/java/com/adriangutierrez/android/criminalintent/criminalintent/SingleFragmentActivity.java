@@ -1,9 +1,11 @@
-package com.adriangutierrez.android.criminalintent;
+package com.adriangutierrez.android.criminalintent.criminalintent;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+
+import com.adriangutierrez.android.criminalintent.R;
 
 public abstract class SingleFragmentActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,4 +22,6 @@ public abstract class SingleFragmentActivity extends FragmentActivity {
 
         }
     }
+
+    protected  abstract Fragment createFragment();
 }

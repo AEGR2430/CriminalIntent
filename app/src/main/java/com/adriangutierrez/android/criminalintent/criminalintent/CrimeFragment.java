@@ -1,4 +1,4 @@
-package com.adriangutierrez.android.criminalintent;
+package com.adriangutierrez.android.criminalintent.criminalintent;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,6 +14,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 
+import com.adriangutierrez.android.criminalintent.R;
 import com.adriangutierrez.android.criminalintent.model.Crime;
 
 public class CrimeFragment extends Fragment {
@@ -69,4 +70,5 @@ public class CrimeFragment extends Fragment {
 
         return v;
     }
+
 }
