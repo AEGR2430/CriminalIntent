@@ -17,7 +17,10 @@ import android.widget.EditText;
 import com.adriangutierrez.android.criminalintent.R;
 import com.adriangutierrez.android.criminalintent.model.Crime;
 
+import java.util.UUID;
+
 public class CrimeFragment extends Fragment {
+    private static final String ARG_CRIME_ID = "crime_id";
     private Crime mCrime;
     private EditText mTitleField;
     private Button mDateButton;
@@ -71,4 +74,12 @@ public class CrimeFragment extends Fragment {
         return v;
     }
 
+    public static Fragment newInstance(UUID crimeId) {
+        Bundle args = new Bundle();
+        args.putSerializable(ARG_CRIME_ID, crimeId);
+        CrimeFragment fragment = new CrimeFragment();
+        fragment.setArguments(args);
+        return fragment;
+
+    }
 }

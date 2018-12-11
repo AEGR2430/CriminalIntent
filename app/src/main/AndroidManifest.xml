@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CrimeActivity">
-
+        <activity android:name="com.adriangutierrez.android.criminalintent.criminalintent.CrimeActivity">
         </activity>
+
+
     </application>
 
 </manifest>

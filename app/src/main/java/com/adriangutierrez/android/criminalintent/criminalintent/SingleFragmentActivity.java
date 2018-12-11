@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import com.adriangutierrez.android.criminalintent.R;
 
 public abstract class SingleFragmentActivity extends FragmentActivity {
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
